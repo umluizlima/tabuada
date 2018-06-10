@@ -1,5 +1,18 @@
-setCookie('teste', 42, 365);
-console.log(getCookie('teste'));
+const url = document.location
+
+const vm = new Vue({
+  el: '#app',
+  delimiters: ["[[","]]"],
+  data: {
+    state: 'still',
+  },
+  mounted : function() {
+
+  },
+  methods: {
+
+  }
+});
 
 function getCookie(name) {
     var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');

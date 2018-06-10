@@ -16,24 +16,34 @@
 
     <title>Tabuada</title>
     <meta name="author" content="Luiz Lima">
-    <meta name="description" content="Um jogo para praticar a tabuada.">
+    <meta name="description" content="Pratique a tabuada neste novo jogo! Quantas vezes você consegue acertar?">
 
+    <link rel="icon" href="./images/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header>
-      <h1>Tabuada</h1>
-    </header>
+    <main id="app">
+      <!-- Menu -->
+      <article v-if="state == 'still'">
+        <header>
+          <h1>TABUADA</h1>
+        </header>
 
-    <main>
-      <h2>Olá, mundo!</h2>
+        <main>
+          <button>JOGAR</button>
+          <p><strong>Como jogar:</strong> Acerte os resultados das equações para acumular pontos!</p>
+        </main>
+
+        <footer>
+          <p>❤️</p>
+          <p>desenvolvido por <a href="https://github.com/umluizlima/" target="_blank" rel="noopener">umluizlima</a></p>
+          <p>disponível no <a href="https://github.com/umluizlima/tabuada/" target="_blank" rel="noopener">Github</a></p>
+        </footer>
+      </article>
     </main>
 
-    <footer>
-      <p>desenvolvido por <a href="https://github.com/umluizlima/" target="_blank" rel="noopener">umluizlima</a></p>
-      <p>disponível no <a href="https://github.com/umluizlima/tabuada/" target="_blank" rel="noopener">Github</a></p>
-    </footer>
-
+    <script type="text/javascript" src="./js/vue.min.js"></script>
     <script type="text/javascript" src="./js/app.js"></script>
   </body>
 </html>
